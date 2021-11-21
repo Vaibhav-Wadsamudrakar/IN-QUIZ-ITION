@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".questionactivity"
+    android:background="@drawable/background"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Who is the current president of india?"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:progress="0"
+            android:max="5"
+            android:minHeight="50dp"
+            style="?android:progressBarStyleHorizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1/5"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:padding="15dp"
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRANAV MUKHERJEE "
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRATIBHA TAIPATIL "
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RAMNATH KOVIND "
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NARENDRA MODI"
+        android:textSize="30dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/border2"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_margin="30dp"
+        />
+
+</LinearLayout>
