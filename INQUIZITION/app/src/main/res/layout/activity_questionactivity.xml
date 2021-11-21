@@ -17,7 +17,7 @@
         android:background="@drawable/border"
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
-        android:text="Who is the current president of india?"
+        android:text="Who is the CURRENT president of india?"
         android:textColor="@color/black"
         android:textSize="40dp"
         android:textStyle="bold"
