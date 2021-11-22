@@ -13,7 +13,9 @@ object setdata {
             "Delhi",
             "Lucknow",
             "Gujrat",
-            2
+            2,
+            1,
+        "1/5"
         )
         var q2=questiondata(
 
@@ -23,7 +25,9 @@ object setdata {
             "Los Angeles",
             "Miami",
             "Washington D.C.",
-            2
+            2,
+            2,
+        "2/5"
         )
         var q3=questiondata(
 
@@ -33,7 +37,9 @@ object setdata {
             "Delhi",
             "Lucknow",
             "Gujrat",
-            2
+            2,
+            3,
+        "3/5"
         )
         var q4=questiondata(
 
@@ -43,7 +49,9 @@ object setdata {
             "Delhi",
             "Lucknow",
             "Gujrat",
-            2
+            2,
+            4,
+        "4/5"
         )
         var q5=questiondata(
 
@@ -53,7 +61,9 @@ object setdata {
             "Delhi",
             "Lucknow",
             "Gujrat",
-            2
+            2,
+            5,
+        "5/5"
         )
         que.add(q1)
         que.add(q2)

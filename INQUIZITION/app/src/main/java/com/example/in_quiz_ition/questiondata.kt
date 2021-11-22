@@ -8,5 +8,9 @@ data class questiondata
         var option2:String,
         var option3:String,
         var option4:String,
-        var correctans:Int
+        var correctans:Int,
+        var progress:Int,
+        var progresstxt:String
+
+
             )

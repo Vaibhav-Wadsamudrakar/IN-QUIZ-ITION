@@ -84,7 +84,15 @@
             >
             
         </Button>
-
-
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="BY TEAM 2+2=5"
+        android:textColor="#00F8B6"
+        android:textSize="18dp"
+        />
+
 </LinearLayout>
