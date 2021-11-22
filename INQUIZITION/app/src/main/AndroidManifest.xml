@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.INQUIZITION">
         <activity
+            android:name=".result"
+            android:exported="true"
+            android:theme="@style/Theme.INQUIZITION2"
+            />
+        <activity
             android:name=".questionactivity"
             android:exported="true" />
         <activity

@@ -2,6 +2,7 @@ package com.example.in_quiz_ition
 
 object setdata {
 
+
     fun getqeustion():ArrayList<questiondata>
     {
         var que:ArrayList<questiondata> = arrayListOf()
@@ -13,9 +14,7 @@ object setdata {
             "Delhi",
             "Lucknow",
             "Gujrat",
-            2,
-            1,
-        "1/5"
+            2
         )
         var q2=questiondata(
 
@@ -25,45 +24,38 @@ object setdata {
             "Los Angeles",
             "Miami",
             "Washington D.C.",
-            2,
-            2,
-        "2/5"
+            4
         )
         var q3=questiondata(
 
             "What is the capital of Spain?",
             1,
-            "Mumbai",
-            "Delhi",
-            "Lucknow",
-            "Gujrat",
-            2,
-            3,
-        "3/5"
+            "Barcelona",
+            "Madrid",
+            "Sevilla",
+            "Valencia",
+            2
         )
         var q4=questiondata(
 
-            "What is the capital of India?",
+            "What is the capital of Pakistan?",
             1,
-            "Mumbai",
-            "Delhi",
-            "Lucknow",
-            "Gujrat",
-            2,
-            4,
-        "4/5"
+            "Peshawar",
+            "Islamabad",
+            "Lahore",
+            "Karachi",
+            2
         )
         var q5=questiondata(
 
-            "What is the capital of India?",
+            "What is the capital of England?",
             1,
-            "Mumbai",
-            "Delhi",
-            "Lucknow",
-            "Gujrat",
-            2,
-            5,
-        "5/5"
+            "Manchester",
+            "Chelsea",
+            "Liverpool",
+            "London",
+            4
+
         )
         que.add(q1)
         que.add(q2)

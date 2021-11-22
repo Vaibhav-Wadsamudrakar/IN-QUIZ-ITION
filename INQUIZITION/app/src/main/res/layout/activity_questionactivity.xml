@@ -7,12 +7,12 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".questionactivity"
-    android:background="@drawable/background"
+    android:background="@drawable/quizbackgroung"
     android:padding="10dp"
     >
 
     <TextView
-        android:id="@+id/question"
+        android:id="@+id/ques"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border"
@@ -35,6 +35,7 @@
             android:id="@+id/progressbar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:background="@color/white"
             android:layout_weight="3"
             android:progress="0"
             android:max="5"
@@ -46,6 +47,7 @@
             android:layout_height="wrap_content"
             android:text="1/5"
             android:textSize="30dp"
+            android:background="@color/white"
             android:textColor="@color/black"
             android:padding="15dp"/>
 
@@ -61,7 +63,6 @@
         android:background="@drawable/border2"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textStyle="bold"
 
         />
     <TextView
@@ -74,7 +75,6 @@
         android:background="@drawable/border2"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textStyle="bold"
         />
     <TextView
         android:id="@+id/op3"
@@ -86,7 +86,6 @@
         android:background="@drawable/border2"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textStyle="bold"
         />
     <TextView
         android:id="@+id/op4"
@@ -98,16 +97,15 @@
         android:background="@drawable/border2"
         android:gravity="center"
         android:textColor="@color/white"
-        android:textStyle="bold"
         />
     <Button
         android:id="@+id/submit"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="SUBMIT"
-        android:textStyle="bold"
+        android:text="Submit"
         android:textSize="20dp"
         android:layout_margin="30dp"
+        android:background="@drawable/border2"
         />
 
 </LinearLayout>
