@@ -2,6 +2,8 @@ package com.example.in_quiz_ition
 
 object setdata {
 
+    const val name:String="name"
+    const val score:String="score"
 
     fun getqeustion():ArrayList<questiondata>
     {

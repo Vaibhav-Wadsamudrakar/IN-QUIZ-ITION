@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             else
             {
                 var intent = Intent(this,questionactivity::class.java)
+                intent.putExtra("${setdata.name}",input.text.toString())
                 startActivity(intent)
                 finish()
             }

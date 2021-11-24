@@ -15,7 +15,8 @@ import kotlinx.android.synthetic.main.activity_questionactivity.*
 
 class questionactivity : AppCompatActivity() {
 
-
+    private var Name:String?=null
+    private var score:Int=0
     private var currentposition: Int=1
     private var questionList : ArrayList<questiondata>?=null
     private var selectedoption:Int=0
@@ -24,7 +25,7 @@ class questionactivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questionactivity)
 
-
+        Name=intent.getStringExtra(setdata.name)
 
         questionList=setdata.getqeustion()
 
@@ -53,7 +54,7 @@ class questionactivity : AppCompatActivity() {
                 }
                 else{
 
-
+                    score++
 
                 }
                 setcolor(question.correctans,R.drawable.correctselectedoptionbackground)
@@ -76,8 +77,12 @@ class questionactivity : AppCompatActivity() {
                     }
                     else->{
 
-
-
+                        var intent=Intent(this@questionactivity,result::class.java)
+                        intent.putExtra(setdata.score,score.toString())
+                        intent.putExtra(setdata.name,Name.toString())
+                        intent.putExtra("total size",questionList!!.size.toString())
+                        startActivity(intent)
+                        finish()
                     }
                 }
             }
@@ -114,7 +119,7 @@ class questionactivity : AppCompatActivity() {
 
         progressbar.progress=currentposition
         progressbar.max=questionList!!.size
-        progresstext.text= "${currentposition}"+"/"+"${questionList!!.size}"
+        progresstext.text= "${currentposition} / ${questionList!!.size}"
         ques.text=question.question
         op1.text=question.option1
         op2.text=question.option2
