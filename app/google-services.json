@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "773287178753",
+    "project_id": "inquizition-596a0",
+    "storage_bucket": "inquizition-596a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:773287178753:android:dbfe734348bbdebc128600",
+        "android_client_info": {
+          "package_name": "com.example.in_quiz_ition"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "773287178753-mb68if7ljhrle0dcb68q8c5bejgbiiht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnCN2gaQJ69SzaUkhX4gpzw3pcme6MiGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "773287178753-mb68if7ljhrle0dcb68q8c5bejgbiiht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

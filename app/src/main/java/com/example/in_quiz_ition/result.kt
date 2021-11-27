@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_result.*
 
 class result : AppCompatActivity() {
@@ -19,6 +20,11 @@ class result : AppCompatActivity() {
         Score.text="${score}/${totalque}"
         mainpage.setOnClickListener{
             startActivity(Intent(this@result,MainActivity::class.java))
+            finish()
+        }
+        logoutbutton.setOnClickListener{
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(this@result,loginactivity::class.java))
             finish()
         }
 

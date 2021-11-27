@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.google.firebase.analytics.FirebaseAnalytics
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             }
             else
             {
-                var intent = Intent(this,questionactivity::class.java)
+                var intent = Intent(this@MainActivity,questionactivity::class.java)
                 intent.putExtra("${setdata.name}",input.text.toString())
                 startActivity(intent)
                 finish()

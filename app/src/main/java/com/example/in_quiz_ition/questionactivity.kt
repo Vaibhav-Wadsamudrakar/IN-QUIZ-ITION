@@ -138,6 +138,7 @@ class questionactivity : AppCompatActivity() {
         for (op in optionList)
         {
             op.background=ContextCompat.getDrawable(this,R.drawable.border2)
+            op.typeface= Typeface.DEFAULT
         }
     }
     fun selectedoptionstyle(view: TextView,opt: Int)
