@@ -35,7 +35,6 @@ class loginactivity : AppCompatActivity() {
 
                         if(task.isSuccessful) {
                             val firebaseUser:FirebaseUser=task.result!!.user!!
-                            Toast.makeText(this, "You are registered successfully!", Toast.LENGTH_SHORT).show()
                             var intent=Intent(this@loginactivity,MainActivity::class.java)
                             intent.flags=Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                             intent.putExtra("user_id",firebaseUser.uid)
