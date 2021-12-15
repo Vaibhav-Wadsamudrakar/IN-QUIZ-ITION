@@ -11,7 +11,7 @@
 
 ## 👨‍🏫 Mentors
 * Saksham Tikoo
-* Pyush Pattnaik
+* Ayush Pattnaik
 * Aayush Razdan
 		
 
