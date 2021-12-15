@@ -57,7 +57,7 @@
             android:id="@+id/mainpage"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="GO TO MAIN PAGE"
+            android:text="GO TO Topics"
             android:layout_gravity="center"
             android:layout_margin="5dp"
             />
