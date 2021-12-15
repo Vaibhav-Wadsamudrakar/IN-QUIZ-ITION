@@ -12,14 +12,13 @@ class result : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
         window.decorView.systemUiVisibility= View.SYSTEM_UI_FLAG_FULLSCREEN
-        val userName=intent.getStringExtra(setdata.name)
         val score=intent.getStringExtra(setdata.score)
         val totalque=intent.getStringExtra("total size")
 
-        congo.text="Congratulations ${userName} !!"
+        congo.text="Congratulations !!"
         Score.text="${score}/${totalque}"
         mainpage.setOnClickListener{
-            startActivity(Intent(this@result,MainActivity::class.java))
+            startActivity(Intent(this@result,topicselectactivity::class.java))
             finish()
         }
         logoutbutton.setOnClickListener{

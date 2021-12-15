@@ -15,7 +15,6 @@ import kotlinx.android.synthetic.main.activity_questionactivity.*
 
 class questionactivity : AppCompatActivity() {
 
-    private var Name:String?=null
     private var score:Int=0
     private var currentposition: Int=1
     private var questionList : ArrayList<questiondata>?=null
@@ -24,10 +23,17 @@ class questionactivity : AppCompatActivity() {
         window.decorView.systemUiVisibility= View.SYSTEM_UI_FLAG_FULLSCREEN
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questionactivity)
+        var counter=intent.getStringExtra("topic")
 
-        Name=intent.getStringExtra(setdata.name)
+            if (counter=="1")
+            {
+                questionList=setdata.getqeustion()
 
-        questionList=setdata.getqeustion()
+            }
+        else
+            {
+                questionList=setdata2.getqeustion()
+            }
 
         setquestion()
 
@@ -79,7 +85,6 @@ class questionactivity : AppCompatActivity() {
 
                         var intent=Intent(this@questionactivity,result::class.java)
                         intent.putExtra(setdata.score,score.toString())
-                        intent.putExtra(setdata.name,Name.toString())
                         intent.putExtra("total size",questionList!!.size.toString())
                         startActivity(intent)
                         finish()
