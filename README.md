@@ -5,8 +5,8 @@
 ## 👨‍💻 Team members
 * Vaibhav Wadsamudrakar –vbwadsamudrakr_b20@ee.vjti.ac.in
 * Tushar Zalte - tszalte_b20@ee.vjti.ac.in
-* Chinmay Lonkar- Email
-* Divyank Jain - Email
+* Chinmay Lonkar
+* Divyank Jain -dpjain_b20@el.vjti.ac.in
 		
 
 ## 👨‍🏫 Mentors
