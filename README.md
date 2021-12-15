@@ -10,9 +10,9 @@
 		
 
 ## 👨‍🏫 Mentors
-* saksham tikoo
-* ayush pattnaik
-* aayush 
+* Saksham Tikoo
+* Pyush Pattnaik
+* Aayush Razdan
 		
 
 ## 📝 Description
