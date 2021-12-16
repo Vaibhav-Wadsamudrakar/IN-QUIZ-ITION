@@ -1,7 +1,6 @@
 package com.example.in_quiz_ition
 
 import android.content.Intent
-import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -51,15 +50,20 @@ class questionactivity : AppCompatActivity() {
         }
 
         submit.setOnClickListener{
+            op1.isEnabled=false
+            op2.isEnabled=false
+            op3.isEnabled=false
+            op4.isEnabled=false
             if (selectedoption!=0)
             {
                 val question=questionList!![currentposition-1]
                 if (selectedoption!=question.correctans)
                 {
                     setcolor(selectedoption,R.drawable.incorrectselectedoptionbackground)
+
                 }
                 else{
-
+                    setcolor(question.correctans,R.drawable.correctselectedoptionbackground)
                     score++
 
                 }
@@ -115,6 +119,7 @@ class questionactivity : AppCompatActivity() {
              4->{
                  op4.background=ContextCompat.getDrawable(this,color)
              }
+
          }
     }
     fun setquestion()
