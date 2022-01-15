@@ -7,6 +7,10 @@ import android.os.Handler
 import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.airbnb.lottie.LottieAnimationView
+
+
+
 
 /*class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,24 +32,18 @@ import com.google.firebase.auth.FirebaseAuth
     }
 }*/
 
-/*
 
-
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.os.Handler
-import com.google.firebase.auth.FirebaseAuth
-*/
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mAuth: FirebaseAuth
+    //private val animationView:LottieAnimationView=findViewById(R.id.animation)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //animationView.playAnimation()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         window.decorView.systemUiVisibility=View.SYSTEM_UI_FLAG_FULLSCREEN
-
 
         mAuth = FirebaseAuth.getInstance()
         val user = mAuth.currentUser
@@ -53,6 +51,7 @@ class MainActivity : AppCompatActivity() {
         /**If user is not authenticated, send him to loginactivity to authenticate first.
          * Else send him to topicselectactivity*/
         Handler().postDelayed({
+
             if(user != null){
                 val intent = Intent(this, topicselectactivity::class.java)
                 startActivity(intent)
@@ -62,7 +61,7 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
-        }, 2000)
+        }, 1500)
 
     }
 }

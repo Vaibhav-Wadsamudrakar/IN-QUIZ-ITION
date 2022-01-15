@@ -15,7 +15,6 @@ class topicselectactivity : AppCompatActivity() {
             var intent=Intent(this,questionactivity::class.java)
             intent.putExtra("topic","1")
             startActivity(intent)
-
             finish()
         }
 
@@ -28,6 +27,11 @@ class topicselectactivity : AppCompatActivity() {
         anotheracc.setOnClickListener{
             var a=Intent(this,loginactivity::class.java)
             startActivity(a)
+            finish()
+        }
+        gotoeditprofile.setOnClickListener {
+            var b=Intent(this,editprofile::class.java)
+            startActivity(b)
             finish()
         }
 

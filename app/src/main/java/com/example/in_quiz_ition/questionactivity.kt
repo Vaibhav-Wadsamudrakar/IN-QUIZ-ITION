@@ -135,6 +135,10 @@ class questionactivity : AppCompatActivity() {
         op2.text=question.option2
         op3.text=question.option3
         op4.text=question.option4
+        op1.isEnabled=true
+        op2.isEnabled=true
+        op3.isEnabled=true
+        op4.isEnabled=true
 
     }
     fun setoptionstyle()

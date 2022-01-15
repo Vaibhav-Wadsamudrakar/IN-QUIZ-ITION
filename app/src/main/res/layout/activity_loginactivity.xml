@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".loginactivity"
     android:gravity="center"
-    android:background="@drawable/bluebackground"
+    android:background="#FF012BFF"
     android:padding="10dp"
     android:orientation="vertical">
     <TextView
@@ -16,7 +16,8 @@
         android:gravity="center"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:textColor="#0051FF"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
         />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -34,7 +35,7 @@
                     android:text="LOGIN"
                     android:textSize="40dp"
                     android:gravity="center"
-                    android:textColor="@color/black"/>
+                    android:textColor="#FF012BFF"/>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,23 +50,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email-id"
-                    android:textColorHint="@color/purple_700" />
+                    android:textColorHint="#FF012BFF" />
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:paddingHorizontal="5dp"
                 android:paddingBottom="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
                 >
-
                 <androidx.appcompat.widget.AppCompatEditText
                     android:id="@+id/loginpassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
-                    android:textColorHint="@color/purple_700"
+                    android:textColorHint="#FF012BFF"
                     />
             </com.google.android.material.textfield.TextInputLayout>
                 <Button

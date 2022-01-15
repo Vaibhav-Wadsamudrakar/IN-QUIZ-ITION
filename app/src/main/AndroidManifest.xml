@@ -4,11 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/tvclipart"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.INQUIZITION">
+
+        <activity
+            android:name=".editprofile"
+            android:exported="false" />
         <activity
             android:name=".topicselectactivity"
             android:exported="true" />
@@ -17,9 +20,7 @@
             android:exported="true" />
         <activity
             android:name=".loginactivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".result"
             android:exported="true"
@@ -38,7 +39,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 

@@ -5,11 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/bluebackground"
+    android:background="#FF012BFF"
     android:gravity="center"
     android:padding="10dp"
     android:orientation="vertical"
     >
+
+    <!--
+       <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/lightbulb"
+        app:lottie_loop="false"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        />
+    -->
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
