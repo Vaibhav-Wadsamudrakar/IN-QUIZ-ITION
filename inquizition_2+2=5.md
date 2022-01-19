@@ -34,7 +34,7 @@ Along with this, add the link of the drive folder that contains the app APK/Scre
 - [x] Firebase authentication(using email)
 - [x] multiple topics(for example basis we have done only 2 for now) 
 - [ ] timer for each question
-- [ ] Firestore database 
+- [x] Firestore database 
 - [ ] Advanced ui/ux
 - [ ] PvP(if possible)
 		
