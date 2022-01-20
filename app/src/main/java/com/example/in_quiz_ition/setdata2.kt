@@ -2,8 +2,6 @@ package com.example.in_quiz_ition
 
 object setdata2 {
 
-    const val score:String="score"
-
     fun getqeustion():ArrayList<questiondata>
     {
         var que:ArrayList<questiondata> = arrayListOf()

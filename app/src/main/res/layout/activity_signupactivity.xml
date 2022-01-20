@@ -58,16 +58,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
-                    android:textColorHint="@color/purple_700" />
+                    android:textColorHint="@color/purple_700"
+                    android:inputType="textPassword"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
+
             <Button
                 android:id="@+id/signupbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sign-up"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                />
+
+                android:text="sign-up" />
+
             <Button
                 android:id="@+id/gotologin"
                 android:layout_width="wrap_content"

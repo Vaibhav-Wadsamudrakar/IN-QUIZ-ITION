@@ -12,7 +12,7 @@ class result : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
         window.decorView.systemUiVisibility= View.SYSTEM_UI_FLAG_FULLSCREEN
-        val score=intent.getStringExtra(setdata.score)
+        val score=intent.getStringExtra("score")
         val totalque=intent.getStringExtra("total size")
 
         congo.text="Congratulations !!"

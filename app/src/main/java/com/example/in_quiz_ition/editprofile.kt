@@ -5,41 +5,52 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import android.widget.*
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_editprofile.*
 
 
 class editprofile : AppCompatActivity() {
+
+    val gender = arrayOf("Male", "Female","Other")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_editprofile)
 
-        var db : DocumentReference = FirebaseFirestore.getInstance().document("users/user details")
+        var db : DocumentReference = FirebaseFirestore.getInstance().document("users/user_details")
+
+        val genderAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, gender)
+        genderAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        genderSpin!!.setAdapter (genderAdapter)
+
         save.setOnClickListener{
 
-                val nicknametxt = findViewById<View>(R.id.nickname)
-                val nametxt = findViewById<View>(R.id.name)
-                val dobtxt = findViewById<View>(R.id.dob)
-                val emailtxt = findViewById<View>(R.id.email)
+                val nicknametxt = findViewById<View>(R.id.nickname) as EditText
+                val nametxt = findViewById<View>(R.id.name) as EditText
+                val dobtxt = findViewById<View>(R.id.dob) as EditText
+                val emailtxt = findViewById<View>(R.id.email) as EditText
 
-                val nickname = nicknametxt.toString().trim()
-                val name = nametxt.toString().trim()
-                val dob = dobtxt.toString().trim()
-                val email = emailtxt.toString().trim()
+                val nickname = nicknametxt.text.toString().trim()
+                val gender = genderSpin.selectedItem.toString().trim()
+                val name = nametxt.text.toString().trim()
+                val dob = dobtxt.text.toString().trim()
+                val email = emailtxt.text.toString().trim()
 
-                if (nickname.isNotEmpty() && name.isNotEmpty() && dob.isNotEmpty() && email.isNotEmpty())
-                    {
-                        val backup =HashMap<String,Any>()
-                        backup.put("Name",name)
+                if (nickname.isNotEmpty() && name.isNotEmpty() && dob.isNotEmpty() && email.isNotEmpty() && gender.isNotEmpty())
+                    {   print("message")
+                        val backup =HashMap<String,String>()
+//                        backup.put("Name",name)
                         backup.put("Nickname",nickname)
                         backup.put("DOB",dob)
                         backup.put("email",email)
+                        backup.put("gender",gender)
 
-                        db.collection(name).document("user details").set(backup).addOnSuccessListener{
+                        db.collection("name").document("user_details").set(backup).addOnSuccessListener{
                         Toast.makeText(this, "Successfully uploaded to the database :)", Toast.LENGTH_LONG).show()
-                        var b = Intent(this,topicselectactivity::class.java)
-                        startActivity(b)
+                        var intent = Intent(this,topicselectactivity::class.java)
+                        startActivity(intent)
                         finish()
                         }.addOnFailureListener{
                             exception: java.lang.Exception ->Toast.makeText(this, exception.toString(), Toast.LENGTH_LONG).show()
@@ -51,6 +62,11 @@ class editprofile : AppCompatActivity() {
 
 
             }
+        selecttopic.setOnClickListener {
+            var intent=Intent(this,topicselectactivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         }
 
