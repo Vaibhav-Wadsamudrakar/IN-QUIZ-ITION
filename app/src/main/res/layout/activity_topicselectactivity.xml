@@ -33,15 +33,15 @@
             android:textSize="30dp"
             />
 
-        <Button
-            android:id="@+id/topic1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Capitals"
-            android:textAllCaps="false"
-            android:textSize="20dp"
-            android:drawableTop="@drawable/capitalclipart"/>
+            <Button
+                android:id="@+id/topic1"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/capitalclipart"
+                android:text="Capitals"
+                android:textAllCaps="false"
+                android:textSize="20dp" />
 
         <Button
             android:id="@+id/topic2"

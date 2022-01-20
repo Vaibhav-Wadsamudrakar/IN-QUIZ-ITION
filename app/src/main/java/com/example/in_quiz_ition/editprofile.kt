@@ -36,18 +36,18 @@ class editprofile : AppCompatActivity() {
                 val gender = genderSpin.selectedItem.toString().trim()
                 val name = nametxt.text.toString().trim()
                 val dob = dobtxt.text.toString().trim()
-                val email = emailtxt.text.toString().trim()
+                val email_id = emailtxt.text.toString().trim()
 
-                if (nickname.isNotEmpty() && name.isNotEmpty() && dob.isNotEmpty() && email.isNotEmpty() && gender.isNotEmpty())
+                if (nickname.isNotEmpty() && name.isNotEmpty() && dob.isNotEmpty() && email_id.isNotEmpty() && gender.isNotEmpty())
                     {   print("message")
                         val backup =HashMap<String,String>()
-//                        backup.put("Name",name)
+                        backup.put("Name",name)
                         backup.put("Nickname",nickname)
                         backup.put("DOB",dob)
-                        backup.put("email",email)
+                        backup.put("email",email_id)
                         backup.put("gender",gender)
 
-                        db.collection("name").document("user_details").set(backup).addOnSuccessListener{
+                        db.collection("${email_id}").document("MyDetails").set(backup).addOnSuccessListener{
                         Toast.makeText(this, "Successfully uploaded to the database :)", Toast.LENGTH_LONG).show()
                         var intent = Intent(this,topicselectactivity::class.java)
                         startActivity(intent)
