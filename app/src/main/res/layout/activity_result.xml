@@ -22,7 +22,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-    <TextView
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/celebration" />
+
+        <TextView
         android:id="@+id/congo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
