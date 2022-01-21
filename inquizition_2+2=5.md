@@ -5,9 +5,7 @@
 ## 👨‍💻 Team members
 * Vaibhav Wadsamudrakar –vbwadsamudrakr_b20@ee.vjti.ac.in
 * Tushar Zalte - tszalte_b20@ee.vjti.ac.in
-* Chinmay Lonkar-calonkar_b20@ee.vjti.ac.in
-* Divyank Jain -dpjain_b20@el.vjti.ac.in
-		
+
 
 ## 👨‍🏫 Mentors
 * Saksham Tikoo
