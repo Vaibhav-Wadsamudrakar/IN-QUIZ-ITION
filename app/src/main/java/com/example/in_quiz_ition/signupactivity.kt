@@ -21,7 +21,7 @@ import kotlinx.android.synthetic.main.activity_signupactivity.nickname
 
 class signupactivity : AppCompatActivity() {
 
-    val gender = arrayOf("Male", "Female","Other")
+    val gender = arrayOf("Male", "Female","Do not wish to disclose")
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,12 +48,14 @@ class signupactivity : AppCompatActivity() {
                 val nametxt = findViewById<View>(R.id.name) as EditText
                 val dobtxt = findViewById<View>(R.id.dob) as EditText
                 val emailtxt = findViewById<View>(R.id.signupemail) as EditText
+                val passwordtxt = findViewById<View>(R.id.signuppassword) as EditText
 
                 val nickname = nicknametxt.text.toString().trim()
                 val gender = genderSpin.selectedItem.toString().trim()
                 val name = nametxt.text.toString().trim()
                 val dob = dobtxt.text.toString().trim()
                 val email_id = emailtxt.text.toString().trim()
+                val password_id = passwordtxt.text.toString().trim()
 
                 if (nickname.isNotEmpty() && name.isNotEmpty() && dob.isNotEmpty() && email_id.isNotEmpty() && gender.isNotEmpty())
                 {   print("message")
@@ -63,12 +65,13 @@ class signupactivity : AppCompatActivity() {
                     backup.put("DOB",dob)
                     backup.put("email",email_id)
                     backup.put("gender",gender)
+                    backup.put("password",password_id)
 
                     db.collection("${email_id}").document("MyDetails").set(backup).addOnSuccessListener{
                         Toast.makeText(this, "Successfully uploaded to the database :)", Toast.LENGTH_LONG).show()
-                        var intent = Intent(this,topicselectactivity::class.java)
-                        startActivity(intent)
-                        finish()
+//                        var intent = Intent(this,loginactivity::class.java)
+//                        startActivity(intent)
+//                        finish()
                     }.addOnFailureListener{
                             exception: java.lang.Exception ->Toast.makeText(this, exception.toString(), Toast.LENGTH_LONG).show()
                     }

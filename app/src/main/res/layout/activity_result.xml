@@ -9,8 +9,18 @@
     android:background="#FF012BFF"
     android:padding="10dp"
     android:theme="@style/Theme.INQUIZITION2"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IN-QUIZ-ITION"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

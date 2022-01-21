@@ -17,6 +17,10 @@ class result : AppCompatActivity() {
 
         congo.text="Congratulations !!"
         Score.text="${score}/${totalque}"
+//        if (score < 2)
+//        {
+//            congo.text=
+//        }
         mainpage.setOnClickListener{
             startActivity(Intent(this@result,topicselectactivity::class.java))
             finish()

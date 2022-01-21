@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_editprofile.*
 
 class editprofile : AppCompatActivity() {
 
-    val gender = arrayOf("Male", "Female","Other")
+    val gender = arrayOf("Male", "Female","Do not wish to disclose")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
