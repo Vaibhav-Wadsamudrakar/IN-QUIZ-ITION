@@ -10,5 +10,4 @@ data class questiondata
         var option4:String,
         var correctans:Int
 
-
-            )
+        )

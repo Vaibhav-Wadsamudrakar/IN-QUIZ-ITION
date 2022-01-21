@@ -1,7 +1,6 @@
 package com.example.in_quiz_ition
 
 import android.content.Intent
-import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -15,7 +14,6 @@ import kotlinx.android.synthetic.main.activity_questionactivity.*
 
 class questionactivity : AppCompatActivity() {
 
-    private var Name:String?=null
     private var score:Int=0
     private var currentposition: Int=1
     private var questionList : ArrayList<questiondata>?=null
@@ -24,10 +22,17 @@ class questionactivity : AppCompatActivity() {
         window.decorView.systemUiVisibility= View.SYSTEM_UI_FLAG_FULLSCREEN
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questionactivity)
+        var counter=intent.getStringExtra("topic")
 
-        Name=intent.getStringExtra(setdata.name)
+            if (counter=="1")
+            {
+                questionList=setdata.getqeustion()
 
-        questionList=setdata.getqeustion()
+            }
+        else
+            {
+                questionList=setdata2.getqeustion()
+            }
 
         setquestion()
 
@@ -45,15 +50,20 @@ class questionactivity : AppCompatActivity() {
         }
 
         submit.setOnClickListener{
+            op1.isEnabled=false
+            op2.isEnabled=false
+            op3.isEnabled=false
+            op4.isEnabled=false
             if (selectedoption!=0)
             {
                 val question=questionList!![currentposition-1]
                 if (selectedoption!=question.correctans)
                 {
                     setcolor(selectedoption,R.drawable.incorrectselectedoptionbackground)
+
                 }
                 else{
-
+                    setcolor(question.correctans,R.drawable.correctselectedoptionbackground)
                     score++
 
                 }
@@ -78,8 +88,7 @@ class questionactivity : AppCompatActivity() {
                     else->{
 
                         var intent=Intent(this@questionactivity,result::class.java)
-                        intent.putExtra(setdata.score,score.toString())
-                        intent.putExtra(setdata.name,Name.toString())
+                        intent.putExtra("score",score.toString())
                         intent.putExtra("total size",questionList!!.size.toString())
                         startActivity(intent)
                         finish()
@@ -110,6 +119,7 @@ class questionactivity : AppCompatActivity() {
              4->{
                  op4.background=ContextCompat.getDrawable(this,color)
              }
+
          }
     }
     fun setquestion()
@@ -125,6 +135,10 @@ class questionactivity : AppCompatActivity() {
         op2.text=question.option2
         op3.text=question.option3
         op4.text=question.option4
+        op1.isEnabled=true
+        op2.isEnabled=true
+        op3.isEnabled=true
+        op4.isEnabled=true
 
     }
     fun setoptionstyle()
@@ -138,6 +152,7 @@ class questionactivity : AppCompatActivity() {
         for (op in optionList)
         {
             op.background=ContextCompat.getDrawable(this,R.drawable.border2)
+            op.typeface= Typeface.DEFAULT
         }
     }
     fun selectedoptionstyle(view: TextView,opt: Int)

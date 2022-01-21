@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".result"
     android:gravity="center"
-    android:background="@drawable/bluebackground"
+    android:background="#FF012BFF"
     android:padding="10dp"
     android:theme="@style/Theme.INQUIZITION2"
     android:orientation="horizontal"
@@ -22,11 +22,18 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-    <TextView
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/celebration" />
+
+        <TextView
         android:id="@+id/congo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Congratulations Name!!"
+        android:text="Congratulations !!"
         android:textSize="20dp"
         android:gravity="center"
         android:textColor="@color/black"
@@ -57,7 +64,16 @@
             android:id="@+id/mainpage"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-            android:text="GO TO MAIN PAGE"
+            android:text="GO TO Topics"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/logoutbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            android:textSize="20dp"
             android:layout_gravity="center"
             android:layout_margin="5dp"
             />

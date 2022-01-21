@@ -20,7 +20,31 @@
         <entry key="..\:/Users/icon/Desktop/IN-QUIZ-ITION/IN-QUIZ-ITION/INQUIZITION/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
 =======
         <entry key="..\:/Users/ASUS/OneDrive/Desktop/IN-QUIZ-ITION/INQUIZITION/app/src/main/res/layout/activity_result.xml" value="0.264" />
+<<<<<<< HEAD
 >>>>>>> 241f016766bff7969ccf3953edefdd1684c45e05:.idea/misc.xml
+=======
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable-v24/border2.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable-v24/friendslogo.xml" value="0.23748723186925433" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/border.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/capitalclipart.xml" value="0.12239583333333333" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/celebration.xml" value="0.21851851851851853" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/correctselectedoptionbackground.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/ic_baseline_manage_accounts_24.xml" value="0.23748723186925433" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/incorrectselectedoptionbackground.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/loginclipart.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/profilevectorasset.xml" value="0.23748723186925433" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/drawable/selectedoptionbackground.xml" value="0.21203703703703702" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/layout/activity_editprofile.xml" value="0.221875" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/layout/activity_loginactivity.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/layout/activity_main.xml" value="0.17222222222222222" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/layout/activity_profile.xml" value="0.221875" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/layout/activity_questionactivity.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/layout/activity_result.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/layout/activity_signupactivity.xml" value="0.16196013289036545" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/layout/activity_topicselectactivity.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.12239583333333333" />
+        <entry key="..\:/Users/ASUS/OneDrive/Desktop/VAIBHAV/IN-QUIZ-ITION/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.12239583333333333" />
+>>>>>>> be769ac65394c4fa987d9d6600d0d19f0c9ba242
       </map>
     </option>
   </component>
@@ -29,5 +53,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2" />
+      </ProjectState>
+    </option>
   </component>
 </project>
