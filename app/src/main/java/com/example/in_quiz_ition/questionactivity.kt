@@ -88,7 +88,7 @@ class questionactivity : AppCompatActivity() {
                     else->{
 
                         var intent=Intent(this@questionactivity,result::class.java)
-                        intent.putExtra("score",score.toString())
+                        intent.putExtra("score",score)
                         intent.putExtra("total size",questionList!!.size.toString())
                         startActivity(intent)
                         finish()

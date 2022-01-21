@@ -12,15 +12,22 @@ class result : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
         window.decorView.systemUiVisibility= View.SYSTEM_UI_FLAG_FULLSCREEN
-        val score=intent.getStringExtra("score")
+        var score=intent.getIntExtra("score",0)
         val totalque=intent.getStringExtra("total size")
 
-        congo.text="Congratulations !!"
         Score.text="${score}/${totalque}"
-//        if (score < 2)
-//        {
-//            congo.text=
-//        }
+        if (score < 2)
+        {
+            congo.text= "Tough Luck.Never mind :) "
+        }
+        if (score >=2 && score<=4)
+        {
+            congo.text="Keep it Up!!"
+        }
+        if (score ==5 )
+        {
+            congo.text="Clean Sweep!Cool!"
+        }
         mainpage.setOnClickListener{
             startActivity(Intent(this@result,topicselectactivity::class.java))
             finish()
