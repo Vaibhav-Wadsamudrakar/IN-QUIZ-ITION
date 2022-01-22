@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".questionactivity"
-    android:background="#FF012BFF"
+    android:background="#7877FF"
     android:padding="10dp"
     >
 <androidx.cardview.widget.CardView
@@ -15,6 +15,7 @@
     android:layout_height="wrap_content"
     app:cardCornerRadius="15dp"
     app:cardElevation="10dp"
+    android:backgroundTint="#FFB225EE"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,9 +31,9 @@
         android:fontFamily="sans-serif-condensed-medium"
         android:gravity="center"
         android:text="Enter your question here."
-        android:textColor="@color/black"
+        android:textColor="#B4F8C8"
         android:textSize="30dp"
-        android:layout_margin="5dp"
+        android:layout_margin="10dp"
         />
      <LinearLayout
         android:layout_width="match_parent"
@@ -48,8 +49,7 @@
              android:layout_width="0dp"
              android:layout_height="match_parent"
              android:layout_weight="3"
-             android:background="@color/white"
-             android:backgroundTint="#FFFFFF"
+             android:backgroundTint="#B225EE"
              android:clickable="false"
              android:max="5"
              android:minHeight="50dp"
@@ -62,8 +62,8 @@
             android:layout_height="wrap_content"
             android:text="1/5"
             android:textSize="30dp"
-            android:background="@color/white"
-            android:textColor="@color/black"
+            android:background="#B225EE"
+            android:textColor="#B4F8C8"
             android:padding="15dp"/>
 
 
@@ -77,7 +77,7 @@
         android:layout_margin="5dp"
         android:background="@drawable/border2"
         android:gravity="center"
-        android:textColor="@color/black"
+        android:textColor="#B4F8C8"
 
         />
     <TextView
@@ -89,7 +89,7 @@
         android:layout_margin="5dp"
         android:background="@drawable/border2"
         android:gravity="center"
-        android:textColor="@color/black"
+        android:textColor="#B4F8C8"
         />
     <TextView
         android:id="@+id/op3"
@@ -100,7 +100,7 @@
         android:layout_margin="5dp"
         android:background="@drawable/border2"
         android:gravity="center"
-        android:textColor="@color/black"
+        android:textColor="#B4F8C8"
         />
     <TextView
         android:id="@+id/op4"
@@ -111,7 +111,7 @@
         android:layout_margin="5dp"
         android:background="@drawable/border2"
         android:gravity="center"
-        android:textColor="@color/black"
+        android:textColor="#B4F8C8"
         />
     <Button
         android:id="@+id/submit"
@@ -121,6 +121,9 @@
         android:textSize="20dp"
         android:layout_margin="30dp"
         android:layout_gravity="center"
+        android:backgroundTint="#FFAEBC"
+        android:elevation="10dp"
+        android:textColor="#B225EE"
         />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

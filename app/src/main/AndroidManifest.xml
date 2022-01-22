@@ -4,11 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/tvclipart"
+        android:icon="@drawable/img2"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.INQUIZITION">
 
+        <activity
+            android:name=".playbuttonactivity"
+            android:exported="false" />
         <activity
             android:name=".editprofile"
             android:exported="false" />

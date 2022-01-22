@@ -8,7 +8,7 @@
     <padding  />
 
     <!-- This is the border color -->
-    <stroke android:width="5dp" android:color="#00FFE500" />
+    <stroke android:width="5dp" android:color="#00B4F8C8" />
 
     <!--- This is the background color -->
     <solid android:color="#000055FF" />

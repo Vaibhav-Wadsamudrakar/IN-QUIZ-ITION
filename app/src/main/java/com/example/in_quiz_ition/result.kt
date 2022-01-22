@@ -32,11 +32,6 @@ class result : AppCompatActivity() {
             startActivity(Intent(this@result,topicselectactivity::class.java))
             finish()
         }
-        logoutbutton.setOnClickListener{
-            FirebaseAuth.getInstance().signOut()
-            startActivity(Intent(this@result,loginactivity::class.java))
-            finish()
-        }
 
     }
 }

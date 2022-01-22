@@ -35,7 +35,7 @@ class loginactivity : AppCompatActivity() {
 
                         if(task.isSuccessful) {
                             val firebaseUser:FirebaseUser=task.result!!.user!!
-                            var intent=Intent(this@loginactivity,topicselectactivity::class.java)
+                            var intent=Intent(this@loginactivity,playbuttonactivity::class.java)
                             intent.flags=Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                             intent.putExtra("user_id",firebaseUser.uid)
                             intent.putExtra("email_id",firebaseUser.email)

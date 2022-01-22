@@ -35,6 +35,8 @@ class questionactivity : AppCompatActivity() {
             }
 
         setquestion()
+        submit.text="Submit"
+
 
         op1.setOnClickListener{
            selectedoptionstyle(op1,1)
@@ -60,22 +62,30 @@ class questionactivity : AppCompatActivity() {
                 if (selectedoption!=question.correctans)
                 {
                     setcolor(selectedoption,R.drawable.incorrectselectedoptionbackground)
-
+                    if(currentposition==questionList!!.size)
+                    {
+                        submit.text="FINISH"
+                    }
+                    else
+                    {
+                        submit.text="Next Question"
+                    }
                 }
                 else{
                     setcolor(question.correctans,R.drawable.correctselectedoptionbackground)
                     score++
+                    if(currentposition==questionList!!.size)
+                    {
+                        submit.text="Finish"
+                    }
+                    else
+                    {
+                        submit.text="Next Question"
+                    }
 
                 }
                 setcolor(question.correctans,R.drawable.correctselectedoptionbackground)
-                if(currentposition==questionList!!.size)
-                {
-                    submit.text="FINISH"
-                }
-                else
-                {
-                    submit.text="Next Question"
-                }
+
             }
             else
             {
@@ -84,6 +94,7 @@ class questionactivity : AppCompatActivity() {
                     currentposition<=questionList!!.size->
                     {
                         setquestion()
+                        submit.text="Submit"
                     }
                     else->{
 
@@ -161,6 +172,6 @@ class questionactivity : AppCompatActivity() {
         selectedoption=opt
         view.background=ContextCompat.getDrawable(this,R.drawable.selectedoptionbackground)
         view.typeface= Typeface.DEFAULT_BOLD
-        view.setTextColor(Color.parseColor("#000000"))
+        view.setTextColor(Color.parseColor("#FFB4F8C8"))
     }
 }

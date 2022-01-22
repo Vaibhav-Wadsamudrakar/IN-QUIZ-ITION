@@ -6,24 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".loginactivity"
     android:gravity="center"
-    android:background="#FF012BFF"
+    android:background="#7877FF"
     android:padding="10dp"
     android:orientation="vertical">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IN-QUIZ-ITION"
-        android:gravity="center"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
         android:fontFamily="sans-serif-medium"
-        />
+        android:gravity="center"
+        android:text="IN-QUIZ-ITION"
+        android:textColor="#B4F8C8"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="10dp"
-        app:cardCornerRadius="10dp">
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#FFB225EE"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="SIGN-UP"
-                android:textColor="@color/black"
+                android:textColor="#FFAEBC"
                 android:textSize="40dp"
                 android:gravity="center"
                 android:padding="10dp"
@@ -52,7 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email-id"
-                    android:textColorHint="@color/purple_700"
+                    android:textColorHint="#FFAEBC"
                     android:inputType="textWebEmailAddress"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -70,7 +73,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
-                    android:textColorHint="@color/purple_700"
+                    android:textColorHint="#FFAEBC"
 
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -89,7 +92,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="nickname"
-                    android:textColorHint="#FF012BFF" />
+                    android:textColorHint="#FFAEBC" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -107,7 +110,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="full name"
-                    android:textColorHint="#FF012BFF" />
+                    android:textColorHint="#FFAEBC" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -124,7 +127,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="date of birth {DD-MM-YYYY}"
-                    android:textColorHint="#FF012BFF"
+                    android:textColorHint="#FFAEBC"
                     android:inputType="date"
                     />
 
@@ -150,20 +153,26 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-
-                android:text="save data and sign-up" />
-
+                android:backgroundTint="#FFFFAEBC"
+                android:text="save data and sign-up"
+                android:layout_margin="5dp"
+                android:elevation="10dp"
+                />
             <Button
                 android:id="@+id/gotologin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Already have account? login here"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
                 android:textSize="10dp"
+                android:backgroundTint="#FFAEBC"
+                android:elevation="10dp"
                 />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>

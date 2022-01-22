@@ -7,14 +7,15 @@
     tools:context=".editprofile"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="#012BFF"
+    android:background="#7877FF"
     android:padding="5dp"
     >
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="20dp"
-        android:padding="5dp"
+        android:padding="10dp"
+        android:backgroundTint="#B4F8C8"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,7 +28,7 @@
             android:text="Edit profile"
             android:gravity="center"
             android:textSize="30dp"
-            android:textColor="#012BFF"
+            android:textColor="#B225EE"
             android:paddingTop="10dp"
             />
             <com.google.android.material.textfield.TextInputLayout
@@ -44,7 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nickname"
-                    android:textColorHint="#FF012BFF" />
+                    android:textColorHint="#B225EE" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -62,7 +63,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Full Name"
-                    android:textColorHint="#FF012BFF" />
+                    android:textColorHint="#B225EE" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -79,7 +80,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Date of Birth {DD-MM-YYYY}"
-                    android:textColorHint="#FF012BFF"
+                    android:textColorHint="#B225EE"
                     android:inputType="date"
                     />
 
@@ -113,7 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email-id"
-                    android:textColorHint="#FF012BFF"
+                    android:textColorHint="#B225EE"
                     android:inputType="textEmailAddress"
                     />
             </com.google.android.material.textfield.TextInputLayout>
@@ -126,16 +127,23 @@
                 android:layout_height="wrap_content"
                 android:text="save"
                 android:id="@+id/save"
+                android:layout_margin="10dp"
+                android:backgroundTint="#B225EE"
+                android:textColor="#FFB4F8C8"
                 />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="select topic"
-                android:id="@+id/selecttopic"
-                />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select topic"
+        android:id="@+id/selecttopic"
+        android:layout_margin="10dp"
+        android:backgroundTint="#FFAEBC"
+        android:textColor="#FFB4F8C8"
+        />
 
 </LinearLayout>

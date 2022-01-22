@@ -53,10 +53,12 @@ class MainActivity : AppCompatActivity() {
         Handler().postDelayed({
 
             if(user != null){
-                val intent = Intent(this, topicselectactivity::class.java)
+                print("user not null")
+                val intent = Intent(this, playbuttonactivity::class.java)
                 startActivity(intent)
                 finish()
             }else{
+                print("user null")
                 val intent = Intent(this, loginactivity::class.java)
                 startActivity(intent)
                 finish()

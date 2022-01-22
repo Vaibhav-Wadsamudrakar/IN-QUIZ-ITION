@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".topicselectactivity"
-    android:background="#FF012BFF"
+    android:background="#7877FF"
     android:orientation="vertical"
     android:theme="@style/Theme.INQUIZITION3"
     android:padding="10dp"
@@ -18,7 +18,7 @@
         android:gravity="center"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
+        android:textColor="#B4F8C8"
         android:fontFamily="sans-serif-medium"
         />
 
@@ -28,42 +28,58 @@
             android:layout_gravity="center"
             android:padding="5dp"
             app:cardCornerRadius="10dp"
+        android:backgroundTint="#B225EE"
         >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Select a topic for the quiz"
-            android:textColor="@color/black"
-            android:textSize="30dp"
-            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Select a topic for the quiz"
+                android:textColor="#B4F8C8"
+                android:textSize="20dp" />
+
 
             <Button
                 android:id="@+id/topic1"
-                android:layout_width="163dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
                 android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FFAEBC"
                 android:drawableTop="@drawable/capitalclipart"
                 android:text="Country Capitals"
                 android:textAllCaps="false"
-                android:textSize="20dp" />
+                android:textColor="#B225EE"
+                android:elevation="10dp"
+                android:textSize="15dp"
+                android:gravity="center"
+                />
 
-        <Button
-            android:id="@+id/topic2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="10dp"
-            android:text="F.R.I.E.N.D.S."
-            android:textAlignment="gravity"
-            android:textAllCaps="false"
-            android:textSize="20dp"
-            android:drawableTop="@drawable/tvclipart"/>
+            <Button
+                android:id="@+id/topic2"
+                android:layout_width="160dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#FFAEBC"
+                android:drawableTop="@drawable/tvclipart"
+                android:elevation="10dp"
+                android:padding="10dp"
+                android:text="F.R.I.E.N.D.S."
+                android:textAlignment="gravity"
+                android:textAllCaps="false"
+                android:textColor="#B225EE"
+                android:textSize="15dp"
+                />
+
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -73,18 +89,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#B4F8C8"
         android:text="Login with another account"
-        android:textColor="@color/purple_700" />
+        android:textColor="#7877FF"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="eidt PROFILE"
         android:textSize="15dp"
         android:drawableTop="@drawable/profilevectorasset"
-        android:backgroundTint="@color/white"
-        android:textColor="#012BFF"
+        android:backgroundTint="#B4F8C8"
+        android:textColor="#7877FF"
         android:id="@+id/gotoeditprofile"
+        android:elevation="10dp"
         />
 
 </LinearLayout>
